@@ -16,7 +16,7 @@ pip install -r requirements.txt
 Ensure your environment is properly configured to support GPU acceleration.
 
 3）Data Preparation
-Before running the code, please download the Galaxy10 DECaLS dataset and unlabeled DECaLS images from the specified website and convert them into h5py format files. Name the files as follows: galaxy10.h5 and decals_hsd.h5.
+Before running the code, please download the Galaxy10 DECaLS dataset and unlabeled DECaLS images from the specified website and convert them into h5py format files. Name the files as follows: Galaxy10_DECaLS.h5 and decals_images.h5.
 
 4）Model Training
 To start training, run the following script:
@@ -26,9 +26,5 @@ python GC-SWGAN.py
 You can adjust the training parameters (e.g., batch size, learning rate) according to your needs. During training, the model optimizes the generator, discriminator, and classifier at different stages.
 
 5）Model Evaluation
-After training is complete, evaluate the model’s performance on the test set by running:
-
-python evaluate.py  
-
-This will provide you with the model’s performance metrics under various evaluation criteria.
+After the training is completed, the model's performance metrics will be automatically displayed on the screen.
 
