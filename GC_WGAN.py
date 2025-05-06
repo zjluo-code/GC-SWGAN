@@ -106,7 +106,7 @@ class Dataset:
         self.y_test = preprocess_labels(self.y_test)
 
         # some functions: flip and rotation
-        def flip_left_90(arr):  #向左旋转90度
+        def flip_left_90(arr):  
             return np.flip(arr.transpose((0,2,1,3)), axis=1)
 
         def flip_180_with_flip_left_90(arr):  
