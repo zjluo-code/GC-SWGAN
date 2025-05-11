@@ -85,8 +85,10 @@ class Dataset:
 
         with h5py.File('./decals_images.h5','r') as FF:
             images_unsup = np.array(FF['images'][:,32:224,32:224,:])
-
-        self.decals_images = np.concatenate([images,images_unsup],axis=0)
+            
+        #self.decals_images = images_unsup 
+        self.decals_images = np.concatenate([images,images_unsup],axis=0)  #images from labeled data can also be used as unlabeled data for unsupervised training.
+       
 
         self.num_unlabeled = self.decals_images.shape[0] #Number of unlabeled galaxies
 
