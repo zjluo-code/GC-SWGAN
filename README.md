@@ -22,6 +22,7 @@ Ensure your environment is properly configured to support GPU acceleration.
 Before running the code, please download the Galaxy10 DECaLS dataset (file name: Galaxy10_DECals.h5) from the Galaxy10 website: https://astronn.readthedocs.io/en/latest/galaxy10.html , and download a sufficient number (recommended >18000) of unlabeled DECaLS images using the image cutout tool from the DESI Legacy Imaging Surveys website: http://legacysurvey.org/viewer/ . Then, convert them into h5py format files. Name the two files as Galaxy10_DECaLS.h5 and decals_images.h5, respectively, so that they can be directly used in the GC-SWGAN code.
 
 4）Model Training
+
 To start training, run the following script:
 
 python GC-SWGAN.py  
@@ -29,5 +30,6 @@ python GC-SWGAN.py
 You can adjust the training parameters (e.g., batch size, learning rate) according to your needs. During training, the model optimizes the generator, discriminator, and classifier at different stages.
 
 5）Model Evaluation
+
 After the training is completed, the model's performance metrics will be automatically displayed on the screen.
 
