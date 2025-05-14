@@ -10,6 +10,7 @@ The code combines semi-supervised generative adversarial networks (SGAN) with Wa
 For detailed explanations of the code, please refer to our paper: https://arxiv.org/abs/2504.00500v1
 
 2）Installation Dependencies
+
 This project is developed using Keras and TensorFlow 2 libraries and uses NVIDIA L40S GPU platforms for accelerated training. To install the required dependencies, use the following command:
 
 pip install -r requirements.txt  
