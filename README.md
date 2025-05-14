@@ -18,7 +18,8 @@ pip install -r requirements.txt
 Ensure your environment is properly configured to support GPU acceleration.
 
 3）Data Preparation
-Before running the code, please download the Galaxy10 DECaLS dataset from Galaxy10 website(https://astronn.readthedocs.io/en/latest/galaxy10.html) and the unlabeled DECaLS images from DESI Legacy Imaging Surveys website (（https://www.legacysurvey.org/), and convert them into h5py format files. Name the files as follows: Galaxy10_DECaLS.h5 and decals_images.h5.
+
+Before running the code, please download the Galaxy10 DECaLS dataset (file name: Galaxy10_DECals.h5) from the Galaxy10 website: https://astronn.readthedocs.io/en/latest/galaxy10.html , and download a sufficient number (recommended >18000) of unlabeled DECaLS images using the image cutout tool from the DESI Legacy Imaging Surveys website: http://legacysurvey.org/viewer/ . Then, convert them into h5py format files. Name the two files as Galaxy10_DECaLS.h5 and decals_images.h5, respectively, so that they can be directly used in the GC-SWGAN code.
 
 4）Model Training
 To start training, run the following script:
